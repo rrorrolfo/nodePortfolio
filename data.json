@@ -1,0 +1,26 @@
+{
+    "projects":[
+        {
+            "id":"0",
+            "project_name":"Phrase Hunter",
+            "description": "Fun game where you need to guess the hidden movie phrase, after 5 wrong attemps the game ends. Project built entirely with HTML CSS and vanilla JS (not mobile responsive).",
+            "technologies": "HMTL, CSS, JS",
+            "live_link": "https://rrorrolfo.github.io/wheel/index.html",
+            "github_link": "https://github.com/rrorrolfo/OOPgame",
+            "image_urls": ["img/phrase_hunter_1.png",
+            "img/phrase_hunter_2.png",
+        "img/phrase_hunter_3.png"]
+        },
+        {
+            "id":"1",
+            "project_name":"WebApp Dashboard",
+            "description": "Great example of an analytics dashboard built with the Chart.js library. Project built entirely with HTML, CSS and JS.Edited and animated scalable vector images (SVG).",
+            "technologies": "HMTL, CSS,SVG, JS, Chart.js",
+            "live_link": "https://rrorrolfo.github.io/dashboard/index.html",
+            "github_link": "https://github.com/rrorrolfo/webAppDashboard",
+            "image_urls": ["img/phrase_hunter_1.png",
+            "img/phrase_hunter_2.png",
+        "img/phrase_hunter_3.png"]
+        }
+    ]
+}
