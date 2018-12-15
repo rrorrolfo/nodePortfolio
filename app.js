@@ -1,19 +1,26 @@
 // Require Express
 const express = require("express");
 
+// Require the projects data
+const { projects }  = require("./data.json");
+
 // Create the App
 const app = express();
-
-// Require the projects data
-//const { projects } = require("data.json");
 
 // Setting the view engine
 app.set("view engine", "pug");
 
 //////////// ROUTES /////////////////
 
-//static route
-app.use("static/", express.static("public"));
+//static route with virtual path prefix
+app.use("/static", express.static("public"));
+
+/*//error tester
+app.use((req, res, next) => {
+    const err = new Error("this is an error");
+    err.status = 500;
+    next(err);
+});*/
 
 // Root route
 app.get("/", (req, res) => {
@@ -29,6 +36,20 @@ app.get("/about", (req, res) => {
 app.get("/project", (req, res) => {
     res.render("project");
 });
+
+/*// 404 handler
+app.use((req, res, next) => {
+    const err = new Error("Page Not Found");
+    err.status = 404;
+    next(err);
+});
+
+// Error handler
+app.use((err, req, res, next) => {
+    res.locals.error = err;
+    res.status(err.status);
+    res.render("error");
+});*/
 
 /////////// SERVER /////////
 
