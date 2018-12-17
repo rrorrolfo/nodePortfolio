@@ -12,6 +12,7 @@ app.set("view engine", "pug");
 //static route with virtual path prefix
 app.use("/static", express.static("public"));
 
+///////// Requiring routes modules /////////
 const routes = require("./routes");
 const projects = require("./routes/projects");
 

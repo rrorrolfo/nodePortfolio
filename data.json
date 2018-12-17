@@ -8,8 +8,8 @@
             "live_link": "https://rrorrolfo.github.io/wheel/index.html",
             "github_link": "https://github.com/rrorrolfo/OOPgame",
             "image_urls": ["img/phrase_hunter_1.png",
-            "img/phrase_hunter_2.png",
-        "img/phrase_hunter_3.png"]
+            "../img/phrase_hunter_2.png",
+        "./img/phrase_hunter_3.png"]
         },
         {
             "id":"1",
