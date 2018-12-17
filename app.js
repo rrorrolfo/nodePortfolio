@@ -1,9 +1,6 @@
 // Require Express
 const express = require("express");
 
-// Require the projects data
-const { projects }  = require("./data.json");
-
 // Create the App
 const app = express();
 
@@ -15,29 +12,13 @@ app.set("view engine", "pug");
 //static route with virtual path prefix
 app.use("/static", express.static("public"));
 
-/*//error tester
-app.use((req, res, next) => {
-    const err = new Error("this is an error");
-    err.status = 500;
-    next(err);
-});*/
+const routes = require("./routes");
+const projects = require("./routes/projects");
 
-// Root route
-app.get("/", (req, res) => {
-    res.render("index");
-});
+app.use(routes);
+app.use(projects);
 
-// About route
-app.get("/about", (req, res) => {
-    res.render("about")
-});
-
-// Projects route
-app.get("/project", (req, res) => {
-    res.render("project");
-});
-
-/*// 404 handler
+// 404 handler
 app.use((req, res, next) => {
     const err = new Error("Page Not Found");
     err.status = 404;
@@ -49,7 +30,7 @@ app.use((err, req, res, next) => {
     res.locals.error = err;
     res.status(err.status);
     res.render("error");
-});*/
+});
 
 /////////// SERVER /////////
 
