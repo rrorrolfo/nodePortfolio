@@ -19,7 +19,7 @@ block content
       //- Use a combination of interpolation and template literals as needed to dynamically generate the routes in the href, as well as the img's src and the projects title.
       each project in projects
         .cell
-          a(href=""+ project.live_link + "" target="_blank") 
+          a(href=`/project/${project.id}` target="_blank") 
             img.thumbnail(src=""+ project.image_urls[1] +"")
             h5= project.project_name
       

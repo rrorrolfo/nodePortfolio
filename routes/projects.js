@@ -6,10 +6,9 @@ const { projects }  = require("../data.json");
 
 
 // Projects route
-router.get("/project", (req, res) => {
-    res.render("project", projects);
-    console.log(projects);
-
+router.get("/project/:id", (req, res) => {
+    res.render("project", { projects });
+    console.log(projects[req.params.id].project_name);
 });
 
 module.exports = router;
