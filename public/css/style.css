@@ -1,10 +1,6 @@
 
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
-}
 
   h5{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     letter-spacing: 2.5px;
     -webkit-text-transform: uppercase;
     text-transform: uppercase;
@@ -69,7 +65,6 @@ a:hover{
   }
 
   .portfolio-me a{
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 600;
     color: #555;
     font-size: 13px;
@@ -121,6 +116,7 @@ a:hover{
   }
 
   .portfolio-index .cell{
+    box-shadow: 4px 2px 5px rgb(187, 187, 187);
     margin-bottom: 15px;
   }
 
@@ -147,4 +143,16 @@ a:hover{
 
 .portfolio-bio{
     line-height: 25px;
+}
+
+.cell.auto h5 {
+  color: #fffb32;
+}
+
+#my-info{
+  background-image: url(../img/what-the-hex-dark.png);
+}
+
+* {
+  font-family: 'Source Code Pro', monospace;
 }
