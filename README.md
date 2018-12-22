@@ -1,5 +1,6 @@
 <h1 align="center">Static Node.js and Express Portfolio</h1>
 <p align="center">Personal portfolio built with Express framework and pug templates</p>
+<p>I created this portfolio as a practice of my skills and knowledge with Node.js. It is built using Express framework and Pug templates. The project aims to showcase projects i have built using client side Javascript.</p>
 
 <h2 align="center">How it works</h2>
 
