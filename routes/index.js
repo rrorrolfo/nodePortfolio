@@ -2,6 +2,7 @@
 const express = require("express");
 const router = express.Router();
 
+// Requires data file
 const { projects }  = require("../data.json");
 
 // Root route

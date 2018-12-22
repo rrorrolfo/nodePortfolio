@@ -27,6 +27,25 @@
             "live_link": "https://rrorrolfo.github.io/directory/index.html",
             "github_link": "https://github.com/rrorrolfo/usingAPIForCreatingADirectory",
             "image_urls": ["/static/img/api_directory_1.png", "/static/img/api_directory_3.png", "/static/img/api_directory_2.png"]
+        },
+        {
+            "id":"3",
+            "project_name":"Interactive Form",
+            "description": "An excellent example of a common form found in a website. The form shows an example of the different type of inputs used commonly (text inputs, radio buttons, text areas, etc.)",
+            "technologies": ["Jquery", "CSS", "HMTL"],
+            "live_link": "https://rrorrolfo.github.io/form/index.html",
+            "github_link": "https://github.com/rrorrolfo/registrationForm",
+            "image_urls": ["/static/img/form_1.png", "/static/img/form_3.png", "/static/img/form_2.png"]
+        },
+        {
+            "id":"4",
+            "project_name":"Style Guide Framework",
+            "description": "Framework built entirely with HTML and SASS, intends to be used as a styleguide for common elements in websites such as images, buttons, etc. Usage of mixins, extends, variables, conditionals within SASS.",
+            "technologies": ["SASS", "HTML"],
+            "live_link": "https://rrorrolfo.github.io/styleGuide/index.html",
+            "github_link": "https://github.com/rrorrolfo/mySASSframework",
+            "image_urls": ["/static/img/style_guide_1.png", "/static/img/style_guide_3.png", "/static/img/style_guide_2.png"]
         }
+
     ]
 }
